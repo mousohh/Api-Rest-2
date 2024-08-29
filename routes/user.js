@@ -13,7 +13,7 @@ router.post("/users", (req, res) => {
 });
 
 // get all users
-router.get("/users", (req, res) => {
+router.get("/users/", (req, res) => {
   userSchema
     .find()
     .then((data) => res.json(data))
